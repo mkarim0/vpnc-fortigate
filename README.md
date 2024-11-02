@@ -25,8 +25,9 @@ sudo dnf install -y libgcrypt-devel gnutls-devel
 ### Ubuntu
 
 #### Dependencies
-
-TODO
+```
+sudo apt install  libgcrypt20-dev libgnutls28-dev python-is-python3
+```
 
 ## Manual Setup
 
