@@ -25,8 +25,9 @@ sudo dnf install -y libgcrypt-devel gnutls-devel
 ### Ubuntu
 
 #### Dependencies
-
-TODO
+```
+sudo apt install  libgcrypt20-dev libgnutls28-dev python-is-python3
+```
 
 ## Manual Setup
 
@@ -63,6 +64,14 @@ sudo ./vpnc/vpnc ~/.vpnc-default
 3) Disconnect using `sudo ./vpnc/vpnc-disconnect` or `kill -9 <PID>`
 
 4) Add to $PATH
+
+## Notes
+In case of this error 
+```
+vpnc: quick mode response rejected:  (ISAKMP_N_INVALID_MESSAGE_ID)(9)
+```
+It means that there is a mismatch between client configuration and server configuration, for example PFS can be disabled on client but enabled on the server, and vice versa
+Or mismatched DH groups
 
 ## Credit
 
